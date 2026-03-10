@@ -4,19 +4,109 @@
         <h1><center><b>Employee Details</b></center></h1>
         <br>
         <p>01. Personal Information</p>
-        <br>
 
-        <table>
+        <table style="margin: auto;">
             <tr>
-                <th>
+                <th style="text-align: left;">
                     <label for="eName">Employee Name</label>
+                    <br>
                     <input type="text" id="eName" placeholder="First Name">
                 </th>
-                <th>
+                <th style="text-align: left;">
                     <label for="lName">Last Name</label>
+                    <br>
                     <input type="text" id="lName" placeholder="Last Name">
                 </th>
             </tr>
+
+            <tr>
+                <td>
+                    <label for="strDate"><b>Starting Date</b></label>
+                    <br>
+                    <input type="date" name="strDate" id="strDate" style="width: 10.7pc;">
+                </td>
+                <td>
+                    <label for="birthDate"><b>Birth Date</b></label>
+                    <br>
+                    <input type="date" name="birthDate" id="birthDate" style="width: 10.7pc;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="eType"><B>Employee Type</B></label>
+                    <br>
+                    <form>
+                        <select name="position" id="eType" style="width: 11pc;">
+                            <option value="none">Select</option>
+                            <option value="ceo">CEO</option>
+                            <option value="cleaner">Cleaner</option>
+                        </select>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <label for="gend"><b>Gender</b></label>
+                        <br>
+                        <input type="radio" name="male" id="gend">Male
+                        <input type="radio" name="female" id="female">Female
+                        
+                    </form>
+                </td>
+            </tr>
         </table>
+        <br>
+
+        <p>02. Location</p>
+        <table style="margin: auto;">
+            <tr>
+                <th style="text-align: left;">
+                    <label for="city">City</label>
+                    <br>
+                    <input type="text" id="city" placeholder="City">
+                </th>
+                <th style="text-align: left;">
+                    <label for="state">State</label>
+                    <br>
+                    <input type="text" id="sate" placeholder="State">
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="zip"><b>ZIP</b></label>
+                    <br>
+                    <input type="text" name="zip" id="zip" placeholder="ZIP">
+                </td>
+                <td>
+                    <label for="Address"><b>Address</b></label>
+                    <br>
+                    <textarea name="Address" id="Address" placeholder="Address"></textarea>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <p>03. Contact Information</p>
+        <table style="margin: auto;">
+             <tr>
+                <th style="text-align: left;">
+                    <label for="Phone">Phone</label>
+                    <br>
+                    <input type="text" id="Phone" placeholder="Phone">
+                </th>
+                <th style="text-align: left;">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" id="email" placeholder="Email">
+                </th>
+            </tr>
+        </table>
+
+        <br>
+
+        <center>
+            <input type="submit" value="Register">
+        </center>
     </body>
 </html>
